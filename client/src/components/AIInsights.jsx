@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { motion } from 'framer-motion';
 import { FiCpu, FiRefreshCw, FiAlertTriangle, FiCheckCircle } from 'react-icons/fi';
+import api from '../api';
 
 export default function AIInsights({ data, dataType }) {
   const [insights, setInsights] = useState([]);
@@ -24,8 +24,7 @@ export default function AIInsights({ data, dataType }) {
         streak: data.analysis?.streaks || {},
       };
 
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
-      const response = await axios.post(`${API_URL}/api/ai-insights`, payload);
+      const response = await api.post('/ai-insights', payload);
       
       setInsights(response.data.insights || []);
     } catch (err) {

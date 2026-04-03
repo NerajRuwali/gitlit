@@ -12,7 +12,6 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     console.error("ErrorBoundary caught an error:", error, errorInfo);
-    fetch('http://localhost:4444/', { method: 'POST', body: error.stack || String(error) }).catch(e=>console.log(e));
   }
 
   render() {
