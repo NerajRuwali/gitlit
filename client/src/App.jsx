@@ -137,7 +137,7 @@ function App() {
               <div className="flex items-center gap-4 text-amber-400">
                 <FiLoader className="animate-spin" size={20} />
                 <div>
-                  <h4 className="font-bold text-sm">Server starting or loading data…</h4>
+                  <h4 className="font-bold text-sm">Loading data…</h4>
                   <p className="text-xs text-amber-400/70 font-medium mt-0.5">
                     This may take up to 30s on first request. Please wait.
                   </p>
