@@ -159,7 +159,7 @@ function App() {
               <div className="flex items-center gap-4 text-red-500">
                 <FiAlertCircle size={24} className="shrink-0" />
                 <div className="min-w-0">
-                  <h4 className="font-bold">Server starting or error occurred</h4>
+                  <h4 className="font-bold">An error occurred</h4>
                   <p className="text-sm text-red-400 font-medium mt-1 break-words">{error}</p>
                 </div>
                 <div className="flex gap-2 shrink-0">
