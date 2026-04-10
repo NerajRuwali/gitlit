@@ -4,7 +4,7 @@ GitLit is a full-stack web application that provides detailed insights into GitH
 
 --------------------------------------------------
 
-## Live Demo
+## Live demo
 
 Frontend: https://git-lit.vercel.app  
 Backend: https://gitlit.onrender.com  
